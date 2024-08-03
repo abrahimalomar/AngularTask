@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="card mb-1 book-card">
+    <div class="card-body text-center" [style.background-color]="backgroundColor">
+      <span >{{ book.title }}</span>
+      @if(showDeleteButton){
+      <button class="btn-delete" (click)="deleteBook()">
+        <i class="fas fa-times"></i>
+      </button>
+      }
+    </div>
+  </div>
+</div>
